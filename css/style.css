@@ -1,0 +1,330 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* better box model */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #fefefc;
+}
+
+h1 {
+  font-family: "Cardo-Regular";
+  font-size: 108px;
+  color: #000000;
+  letter-spacing: 0.45px;
+}
+
+h2 {
+  font-family: "Cardo-Bold";
+  font-size: 32px;
+  color: #000000;
+  letter-spacing: 0.45px;
+}
+
+h3 {
+  font-family: "Oswald-Medium";
+  font-size: 20px;
+  color: #000000;
+  letter-spacing: 0.16px;
+}
+
+h4 {
+  font-family: "Oswald-Light";
+  font-size: 22px;
+  color: #000000;
+  letter-spacing: 0.55px;
+  line-height: 1.8em;
+}
+
+p {
+  font-family: "Oswald-Regular";
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: 0.72px;
+  line-height: 1.3em;
+}
+
+a {
+  color: #000;
+}
+
+.center {
+  text-align: center;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+/* Site-Specific Styles */
+
+.container {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+/* Nav */
+
+nav {
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-link {
+  margin-right: 30px;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 160px);
+}
+
+.header-text {
+  padding-top: 30vh;
+}
+
+.header-highlight {
+  background-color: #ffea00;
+}
+
+.header-subtext {
+  padding-top: 30vh;
+}
+
+.arrow-down {
+  padding-top: 20px;
+}
+
+/* Project */
+.work {
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: calc(50vw - 95px);
+  height: auto;
+  margin-bottom: 120px;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+/* Home */
+.home-footer {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lets-talk {
+  background-color: #ffea00;
+}
+
+.social {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Common Classes */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+.clear {
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+/* Media Queries */
+@media only screen and (max-width: 688px) {
+  h1 {
+    font-size: 55px;
+  }
+
+  h2 {
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .container {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .project {
+    width: 100vw;
+    margin-bottom: 80px;
+  }
+}

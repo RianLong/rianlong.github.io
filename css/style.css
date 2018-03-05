@@ -193,6 +193,49 @@ a {
   text-decoration: none;
 }
 
+#return-to-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #000;
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 9px;
+  font-size: 28px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+  background: #ffea00;
+}
+#return-to-top:hover i {
+  color: #000;
+  top: 5px;
+}
+
 /* Site-Specific Styles */
 
 .container {
@@ -211,6 +254,10 @@ nav {
 .nav-links {
   display: flex;
   justify-content: space-between;
+}
+
+.work-link {
+  margin-right: 30px;
 }
 
 .about-link {
@@ -413,7 +460,9 @@ header {
 .right {
   float: right;
 }
+
 /* Media Queries */
+
 @media only screen and (min-width: 800px) {
   h1 {
     font-size: 108px;
@@ -472,5 +521,12 @@ header {
     width: 50vw;
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .project {
+    width: calc(33vw - 75px);
+    margin-bottom: 80px;
   }
 }

@@ -141,7 +141,7 @@ body {
 h1 {
   font-family: "Cardo", serif;
   font-weight: 400;
-  font-size: 108px;
+  font-size: 55px;
   color: #000000;
   letter-spacing: 0.45px;
 }
@@ -157,7 +157,7 @@ h2 {
 h3 {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   color: #000000;
   letter-spacing: 0.16px;
 }
@@ -165,7 +165,7 @@ h3 {
 h4 {
   font-family: "Oswald", sans-serif;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 18px;
   color: #000000;
   letter-spacing: 0.55px;
   line-height: 1.8em;
@@ -174,7 +174,7 @@ h4 {
 p {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   color: #000000;
   letter-spacing: 0.72px;
   line-height: 1.3em;
@@ -196,8 +196,8 @@ a {
 /* Site-Specific Styles */
 
 .container {
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 /* Nav */
@@ -251,9 +251,9 @@ header {
 }
 
 .project {
-  width: calc(50vw - 95px);
+  width: 100vw;
   height: auto;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 
 .project img {
@@ -298,7 +298,7 @@ header {
 }
 
 .content-img {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .content-video {
@@ -307,7 +307,6 @@ header {
   padding-top: 35px;
   height: 0;
   overflow: hidden;
-  margin-bottom: 60px;
 }
 
 .content-video iframe {
@@ -322,18 +321,20 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   margin-bottom: 60px;
 }
 
 .content-half-img {
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 
 .content-half-text {
-  width: 50%;
+  width: 100%;
   height: auto;
-  margin-right: 10%;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .content-background-info {
@@ -357,7 +358,7 @@ header {
 
 .project-footer-background {
   background-color: #ffea00;
-  height: 180px;
+  height: 140px;
   width: 100%;
   position: absolute;
   z-index: -100;
@@ -370,7 +371,9 @@ header {
 }
 
 .about-text {
-  width: 50vw;
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* Contact */
@@ -411,63 +414,63 @@ header {
   float: right;
 }
 /* Media Queries */
-@media only screen and (max-width: 736px) {
+@media only screen and (min-width: 768px) {
   h1 {
-    font-size: 55px;
+    font-size: 108px;
   }
 
   h3 {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   h4 {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .container {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 60px;
+    margin-right: 60px;
   }
 
   .project {
-    width: 100vw;
-    margin-bottom: 80px;
+    width: calc(50vw - 95px);
+    margin-bottom: 120px;
   }
 
   .project-footer-background {
-    height: 140px;
+    height: 180px;
   }
 
   .content-img {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
   }
 
   .content-video {
-    margin-bottom: 0px;
+    margin-bottom: 60px;
   }
 
   .content-half-half {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .content-half-img {
-    width: 100%;
+    width: 50%;
   }
 
   .content-half-text {
-    width: 100%;
-    margin-right: 0;
-    text-align: center;
-    margin-bottom: 20px;
+    width: 50%;
+    margin-right: 10%;
+    text-align: left;
+    margin-bottom: 0;
   }
 
   .about-text {
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 50vw;
+    padding-left: 0;
+    padding-right: 0;
   }
 }

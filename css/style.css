@@ -482,6 +482,19 @@ header {
   padding-bottom: 40px;
 }
 
+.contact h2 {
+  line-height: 1.3em;
+}
+
+.contact a {
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.contact a:hover {
+  opacity: 0.4;
+}
+
 /* Common Classes */
 .clearfix:before,
 .clearfix:after {

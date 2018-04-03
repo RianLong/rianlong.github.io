@@ -571,7 +571,7 @@ header {
 
   .content-half-text {
     width: 50%;
-    margin-right: 10%;
+    padding-right: 10%;
     text-align: left;
     margin-bottom: 0;
   }

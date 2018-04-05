@@ -282,7 +282,7 @@ header {
 }
 
 .header-text {
-  padding-top: 25vh;
+  padding-top: 20vh;
 }
 
 .highlight {
@@ -290,11 +290,12 @@ header {
 }
 
 .header-subtext {
-  padding-top: 20vh;
+  padding-top: 10vh;
 }
 
 .arrow-down {
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /* Work */

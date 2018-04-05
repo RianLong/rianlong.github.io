@@ -278,11 +278,11 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: calc(100vh - 160px);
+  min-height: calc(100vh - 260px);
 }
 
 .header-text {
-  padding-top: 30vh;
+  padding-top: 25vh;
 }
 
 .highlight {
@@ -290,12 +290,11 @@ header {
 }
 
 .header-subtext {
-  padding-top: 30vh;
+  padding-top: 20vh;
 }
 
 .arrow-down {
   padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 /* Work */
@@ -337,6 +336,7 @@ header {
 }
 
 /* Home */
+
 .home-footer {
   margin-top: 120px;
   display: flex;

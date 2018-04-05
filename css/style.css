@@ -365,6 +365,11 @@ header {
   justify-content: space-between;
 }
 
+.social-home {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
 /* Project Page */
 .project-page-title {
   padding-top: 30vh;

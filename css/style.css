@@ -541,12 +541,12 @@ header {
   }
 
   .container {
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
   }
 
   .project {
-    width: calc(50vw - 95px);
+    width: calc(50vw - 130px);
     margin-bottom: 120px;
   }
 

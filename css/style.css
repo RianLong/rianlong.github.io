@@ -586,12 +586,12 @@ header {
 
 @media only screen and (min-width: 1600px) {
   .container {
-    margin-left: 85px;
-    margin-right: 85px;
+    margin-left: 200px;
+    margin-right: 200px;
   }
 
   .project {
-    width: calc(33vw - 75px);
+    width: calc(33vw - 150px);
     margin-bottom: 80px;
   }
 }

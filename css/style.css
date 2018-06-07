@@ -625,4 +625,11 @@ header {
   .nav {
     width: calc(100% - 200px);
   }
+
+  .shop-teaser {
+    align-items: baseline;
+    width: 100%;
+    margin-bottom: 120px;
+    height: unset;
+  }
 }

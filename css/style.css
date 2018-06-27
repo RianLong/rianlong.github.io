@@ -375,7 +375,7 @@ header {
 
 .social {
   margin-bottom: 100px;
-  width: 240px;
+  width: 300px;
   display: flex;
   justify-content: space-between;
 }
@@ -611,7 +611,7 @@ header {
   }
 
   .social {
-    width: 300px;
+    width: 360px;
   }
 }
 

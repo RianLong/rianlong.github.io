@@ -382,7 +382,7 @@ half-module {
 }*/
 
 .half-module {
-  background-color: red;
+  background-color: var(--grey);
   width: 100%;
   padding-top: 100%;
   position: relative;

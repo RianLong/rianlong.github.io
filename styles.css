@@ -374,16 +374,27 @@ PROJECT MODULES
 }
 
 /* HALF MODULES */
-.half-module {
+/*
+half-module {
   width: 100%;
   position: relative;
   display: flex;
+}*/
+
+.half-module {
+  background-color: red;
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
 }
 
 .half-module img, .half-module img {
-  width: 100%;
-  object-fit: cover;
-  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%
 }
 
 .left-half-module {
@@ -391,6 +402,7 @@ PROJECT MODULES
   justify-content: flex-start;
   margin-top: 80px;
   padding-bottom: 80px;
+  width: 50%
 }
 
 .right-half-module {
@@ -398,12 +410,18 @@ PROJECT MODULES
   justify-content: flex-end;
   margin-top: 80px;
   padding-bottom: 80px;
+  width: 50%
 }
 
 .fifty-fifty-module {
   display: flex;
   margin-top: 80px;
   padding-bottom: 80px;
+  flex-direction: row;
+}
+
+.fifty-fifty-asset {
+  width: 50%;
 }
 
 /* NEXT PROJECT */
@@ -581,25 +599,6 @@ PROJECT MODULES
 
   .mobile-desktop-module-desktophalf > img, .mobile-desktop-module-desktophalf > video {
     border-radius: 24px;
-  }
-
-  .half-module {
-    width: 50%;
-  }
-
-  .left-half-module {
-    margin-top: 200px;
-    padding-bottom: 200px;
-  }
-  
-  .right-half-module {
-    margin-top: 200px;
-    padding-bottom: 200px;
-  }
-
-  .fifty-fifty-module {
-    margin-top: 200px;
-    padding-bottom: 200px;
   }
 
   .clients-list {

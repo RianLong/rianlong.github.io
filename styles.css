@@ -224,8 +224,7 @@ PROJECT MODULES
   transition: all 200ms cubic-bezier(0, 0.18, 0.07, 1);
 }
 
-.project-item:hover .link::before,
-.link:hover::before {
+.project-item:hover .link::before, .link:hover::before {
   visibility: visible;
   transform: scaleX(1);
 }
@@ -425,11 +424,16 @@ PROJECT MODULES
 
 /* CONTACT PAGE */
 .contact-info {
-  margin-top: 80px;
+  margin-top: 64px;
+  max-width: 400px;
+}
+
+.contact-info > * {
+  display: inline-block;
+  margin-top: 64px;
 }
 
 .contact-info h1 {
-  margin-bottom: 64px;
   font-size: 26px;
 }
 
@@ -437,6 +441,25 @@ PROJECT MODULES
   font-size: 24px;
 }
 
+/* LOCKED PAGE */
+.locked-copy {
+  margin-top: 80px;
+  margin-bottom: 16px;
+  max-width: 480px;
+}
+
+.locked-copy h2 {
+  margin-top: 36px;
+}
+
+.locked-contact-info {
+  max-width: 400px;
+}
+
+.locked-contact-info > * {
+  display: inline-block;
+  margin-top: 24px;
+}
 
 
 /* MEDIA QUERIES */
@@ -547,16 +570,30 @@ PROJECT MODULES
   }
 
   .contact-info {
-    margin-top: 200px;
+    margin-top: 80px;
+    max-width: 800px;
+  }
+  
+  .contact-info > * {
+    margin-top: 80px;
   }
   
   .contact-info h1 {
-    margin-bottom: 80px;
     font-size: 48px;
   }
+
+  .locked-copy {
+    margin-top: 200px;
+    margin-bottom: 24px;
+    max-width: 800px;
+  }
+
+  .locked-copy h2 {
+    margin-top: 80px;
+  }
   
-  .contact-info > :first-child {
-    font-size: 48px;
+  .locked-contact-info > * {
+    margin-top: 40px;
   }
 }
 

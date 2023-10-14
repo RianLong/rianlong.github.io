@@ -1,128 +1,338 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="/styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJZZS3WEJ5"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rian Long</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="/js/projectbanner.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+</head>
 
-        gtag('config', 'G-ZJZZS3WEJ5');
-        </script>
-        <title>Rian Long</title>
-    </head>
+
 <body>
-    <div class="container">
-        <nav>
-            <div class="nav-left">
-                <a href="/"><h3>Rian Long</h3></a>
+  <header id="navMain">
+    <nav>
+      <div class="banner-content">
+        <div class="bc-left">
+          <div class="bc-icon">
+            <div id="openNav">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <rect y="2" width="16" height="1.5" fill="white"/>
+                <rect y="7" width="16" height="1.5" fill="white"/>
+                <rect y="12" width="16" height="1.5" fill="white"/>
+              </svg>
             </div>
-            <div class="nav-right">
-                <a href="/about" class="link"><h3>About</h3></a>
-                <a href="/contact" class="link"><h3>Contact</h3></a>
+            <div id="closeNav">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <rect x="2.87347" y="1.56299" width="16" height="1.5" transform="rotate(45 2.87347 1.56299)" fill="white"/>
+                <rect x="1.81281" y="12.8765" width="16" height="1.5" transform="rotate(-45 1.81281 12.8765)" fill="white"/>
+              </svg>
             </div>
-        </nav>
-        <div class="project-grid">
-            <a href="/locked"><div class="project-item">
-                <div class="project-item-thumb">
-                    <img src="img/thumb_tiktok.png">
-                </div>
-                <div class="project-item-title locked-project-title">
-                    <h2 class="link">TikTok</h2>
-                    <svg width="22" height="26" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.5 16.5C12.0856 16.5 11.6882 16.658 11.3951 16.9393C11.1021 17.2206 10.9375 17.6022 10.9375 18V22.5C10.9375 22.8978 11.1021 23.2794 11.3951 23.5607C11.6882 23.842 12.0856 24 12.5 24C12.9144 24 13.3118 23.842 13.6049 23.5607C13.8979 23.2794 14.0625 22.8978 14.0625 22.5V18C14.0625 17.6022 13.8979 17.2206 13.6049 16.9393C13.3118 16.658 12.9144 16.5 12.5 16.5ZM20.3125 10.5V7.5C20.3125 5.51088 19.4894 3.60322 18.0243 2.1967C16.5591 0.790176 14.572 0 12.5 0C10.428 0 8.44086 0.790176 6.97573 2.1967C5.5106 3.60322 4.6875 5.51088 4.6875 7.5V10.5C3.4443 10.5 2.25201 10.9741 1.37294 11.818C0.49386 12.6619 0 13.8065 0 15V25.5C0 26.6935 0.49386 27.8381 1.37294 28.682C2.25201 29.5259 3.4443 30 4.6875 30H20.3125C21.5557 30 22.748 29.5259 23.6271 28.682C24.5061 27.8381 25 26.6935 25 25.5V15C25 13.8065 24.5061 12.6619 23.6271 11.818C22.748 10.9741 21.5557 10.5 20.3125 10.5ZM7.8125 7.5C7.8125 6.30653 8.30636 5.16193 9.18544 4.31802C10.0645 3.47411 11.2568 3 12.5 3C13.7432 3 14.9355 3.47411 15.8146 4.31802C16.6936 5.16193 17.1875 6.30653 17.1875 7.5V10.5H7.8125V7.5ZM21.875 25.5C21.875 25.8978 21.7104 26.2794 21.4174 26.5607C21.1243 26.842 20.7269 27 20.3125 27H4.6875C4.2731 27 3.87567 26.842 3.58265 26.5607C3.28962 26.2794 3.125 25.8978 3.125 25.5V15C3.125 14.6022 3.28962 14.2206 3.58265 13.9393C3.87567 13.658 4.2731 13.5 4.6875 13.5H20.3125C20.7269 13.5 21.1243 13.658 21.4174 13.9393C21.7104 14.2206 21.875 14.6022 21.875 15V25.5Z" fill="#161615"/>
-                        </svg>
-                </div>
-            </div></a>
-            <a href="/instagram"><div class="project-item">
-                <div class="project-item-thumb">
-                    <img src="img/project-ig.png">
-                </div>
-                <div class="project-item-title link">
-                    <h2>Instagram</h2>
-                </div>
-            </div></a>
-            <a href="/hubs"><div class="project-item">
-                <div class="project-item-thumb">
-                    <img src="img/project-hubs.png">
-                </div>
-                <div class="project-item-title link">
-                    <h2>Hubs by Mozilla</h2>
-                </div>
-            </div></a>
-            <a href="/locked"><div class="project-item">
-                <div class="project-item-thumb">
-                    <img src="img/project-epic.png">
-                </div>
-                <div class="project-item-title locked-project-title">
-                    <h2 class="link">Epic Games</h2>
-                    <svg width="22" height="26" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.5 16.5C12.0856 16.5 11.6882 16.658 11.3951 16.9393C11.1021 17.2206 10.9375 17.6022 10.9375 18V22.5C10.9375 22.8978 11.1021 23.2794 11.3951 23.5607C11.6882 23.842 12.0856 24 12.5 24C12.9144 24 13.3118 23.842 13.6049 23.5607C13.8979 23.2794 14.0625 22.8978 14.0625 22.5V18C14.0625 17.6022 13.8979 17.2206 13.6049 16.9393C13.3118 16.658 12.9144 16.5 12.5 16.5ZM20.3125 10.5V7.5C20.3125 5.51088 19.4894 3.60322 18.0243 2.1967C16.5591 0.790176 14.572 0 12.5 0C10.428 0 8.44086 0.790176 6.97573 2.1967C5.5106 3.60322 4.6875 5.51088 4.6875 7.5V10.5C3.4443 10.5 2.25201 10.9741 1.37294 11.818C0.49386 12.6619 0 13.8065 0 15V25.5C0 26.6935 0.49386 27.8381 1.37294 28.682C2.25201 29.5259 3.4443 30 4.6875 30H20.3125C21.5557 30 22.748 29.5259 23.6271 28.682C24.5061 27.8381 25 26.6935 25 25.5V15C25 13.8065 24.5061 12.6619 23.6271 11.818C22.748 10.9741 21.5557 10.5 20.3125 10.5ZM7.8125 7.5C7.8125 6.30653 8.30636 5.16193 9.18544 4.31802C10.0645 3.47411 11.2568 3 12.5 3C13.7432 3 14.9355 3.47411 15.8146 4.31802C16.6936 5.16193 17.1875 6.30653 17.1875 7.5V10.5H7.8125V7.5ZM21.875 25.5C21.875 25.8978 21.7104 26.2794 21.4174 26.5607C21.1243 26.842 20.7269 27 20.3125 27H4.6875C4.2731 27 3.87567 26.842 3.58265 26.5607C3.28962 26.2794 3.125 25.8978 3.125 25.5V15C3.125 14.6022 3.28962 14.2206 3.58265 13.9393C3.87567 13.658 4.2731 13.5 4.6875 13.5H20.3125C20.7269 13.5 21.1243 13.658 21.4174 13.9393C21.7104 14.2206 21.875 14.6022 21.875 15V25.5Z" fill="#161615"/>
-                        </svg>
-                </div>
-            </div></a>
-            <a href="/locked"><div class="project-item">
-                <div class="project-item-thumb">
-                    <img src="img/project-purple.png">
-                </div>
-                <div class="project-item-title locked-project-title">
-                    <h2 class="link">Purple</h2>
-                    <svg width="22" height="26" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.5 16.5C12.0856 16.5 11.6882 16.658 11.3951 16.9393C11.1021 17.2206 10.9375 17.6022 10.9375 18V22.5C10.9375 22.8978 11.1021 23.2794 11.3951 23.5607C11.6882 23.842 12.0856 24 12.5 24C12.9144 24 13.3118 23.842 13.6049 23.5607C13.8979 23.2794 14.0625 22.8978 14.0625 22.5V18C14.0625 17.6022 13.8979 17.2206 13.6049 16.9393C13.3118 16.658 12.9144 16.5 12.5 16.5ZM20.3125 10.5V7.5C20.3125 5.51088 19.4894 3.60322 18.0243 2.1967C16.5591 0.790176 14.572 0 12.5 0C10.428 0 8.44086 0.790176 6.97573 2.1967C5.5106 3.60322 4.6875 5.51088 4.6875 7.5V10.5C3.4443 10.5 2.25201 10.9741 1.37294 11.818C0.49386 12.6619 0 13.8065 0 15V25.5C0 26.6935 0.49386 27.8381 1.37294 28.682C2.25201 29.5259 3.4443 30 4.6875 30H20.3125C21.5557 30 22.748 29.5259 23.6271 28.682C24.5061 27.8381 25 26.6935 25 25.5V15C25 13.8065 24.5061 12.6619 23.6271 11.818C22.748 10.9741 21.5557 10.5 20.3125 10.5ZM7.8125 7.5C7.8125 6.30653 8.30636 5.16193 9.18544 4.31802C10.0645 3.47411 11.2568 3 12.5 3C13.7432 3 14.9355 3.47411 15.8146 4.31802C16.6936 5.16193 17.1875 6.30653 17.1875 7.5V10.5H7.8125V7.5ZM21.875 25.5C21.875 25.8978 21.7104 26.2794 21.4174 26.5607C21.1243 26.842 20.7269 27 20.3125 27H4.6875C4.2731 27 3.87567 26.842 3.58265 26.5607C3.28962 26.2794 3.125 25.8978 3.125 25.5V15C3.125 14.6022 3.28962 14.2206 3.58265 13.9393C3.87567 13.658 4.2731 13.5 4.6875 13.5H20.3125C20.7269 13.5 21.1243 13.658 21.4174 13.9393C21.7104 14.2206 21.875 14.6022 21.875 15V25.5Z" fill="#161615"/>
-                        </svg>
-                </div>
-            </div></a>
-            <a href="/locked"><div class="project-item">
-                <div class="project-item-thumb">
-                    <img src="img/project-oculus.png">
-                </div>
-                <div class="project-item-title locked-project-title">
-                    <h2 class="link">Oculus</h2>
-                    <svg width="22" height="26" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.5 16.5C12.0856 16.5 11.6882 16.658 11.3951 16.9393C11.1021 17.2206 10.9375 17.6022 10.9375 18V22.5C10.9375 22.8978 11.1021 23.2794 11.3951 23.5607C11.6882 23.842 12.0856 24 12.5 24C12.9144 24 13.3118 23.842 13.6049 23.5607C13.8979 23.2794 14.0625 22.8978 14.0625 22.5V18C14.0625 17.6022 13.8979 17.2206 13.6049 16.9393C13.3118 16.658 12.9144 16.5 12.5 16.5ZM20.3125 10.5V7.5C20.3125 5.51088 19.4894 3.60322 18.0243 2.1967C16.5591 0.790176 14.572 0 12.5 0C10.428 0 8.44086 0.790176 6.97573 2.1967C5.5106 3.60322 4.6875 5.51088 4.6875 7.5V10.5C3.4443 10.5 2.25201 10.9741 1.37294 11.818C0.49386 12.6619 0 13.8065 0 15V25.5C0 26.6935 0.49386 27.8381 1.37294 28.682C2.25201 29.5259 3.4443 30 4.6875 30H20.3125C21.5557 30 22.748 29.5259 23.6271 28.682C24.5061 27.8381 25 26.6935 25 25.5V15C25 13.8065 24.5061 12.6619 23.6271 11.818C22.748 10.9741 21.5557 10.5 20.3125 10.5ZM7.8125 7.5C7.8125 6.30653 8.30636 5.16193 9.18544 4.31802C10.0645 3.47411 11.2568 3 12.5 3C13.7432 3 14.9355 3.47411 15.8146 4.31802C16.6936 5.16193 17.1875 6.30653 17.1875 7.5V10.5H7.8125V7.5ZM21.875 25.5C21.875 25.8978 21.7104 26.2794 21.4174 26.5607C21.1243 26.842 20.7269 27 20.3125 27H4.6875C4.2731 27 3.87567 26.842 3.58265 26.5607C3.28962 26.2794 3.125 25.8978 3.125 25.5V15C3.125 14.6022 3.28962 14.2206 3.58265 13.9393C3.87567 13.658 4.2731 13.5 4.6875 13.5H20.3125C20.7269 13.5 21.1243 13.658 21.4174 13.9393C21.7104 14.2206 21.875 14.6022 21.875 15V25.5Z" fill="#161615"/>
-                        </svg>
-                </div>
-            </div></a>
-            <a href="/locked"><div class="project-item">
-                <div class="project-item-thumb">
-                    <img src="img/project-olympics.png">
-                </div>
-                <div class="project-item-title locked-project-title">
-                    <h2 class="link">Tokyo 2020 Olympics</h2>
-                    <svg width="22" height="26" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.5 16.5C12.0856 16.5 11.6882 16.658 11.3951 16.9393C11.1021 17.2206 10.9375 17.6022 10.9375 18V22.5C10.9375 22.8978 11.1021 23.2794 11.3951 23.5607C11.6882 23.842 12.0856 24 12.5 24C12.9144 24 13.3118 23.842 13.6049 23.5607C13.8979 23.2794 14.0625 22.8978 14.0625 22.5V18C14.0625 17.6022 13.8979 17.2206 13.6049 16.9393C13.3118 16.658 12.9144 16.5 12.5 16.5ZM20.3125 10.5V7.5C20.3125 5.51088 19.4894 3.60322 18.0243 2.1967C16.5591 0.790176 14.572 0 12.5 0C10.428 0 8.44086 0.790176 6.97573 2.1967C5.5106 3.60322 4.6875 5.51088 4.6875 7.5V10.5C3.4443 10.5 2.25201 10.9741 1.37294 11.818C0.49386 12.6619 0 13.8065 0 15V25.5C0 26.6935 0.49386 27.8381 1.37294 28.682C2.25201 29.5259 3.4443 30 4.6875 30H20.3125C21.5557 30 22.748 29.5259 23.6271 28.682C24.5061 27.8381 25 26.6935 25 25.5V15C25 13.8065 24.5061 12.6619 23.6271 11.818C22.748 10.9741 21.5557 10.5 20.3125 10.5ZM7.8125 7.5C7.8125 6.30653 8.30636 5.16193 9.18544 4.31802C10.0645 3.47411 11.2568 3 12.5 3C13.7432 3 14.9355 3.47411 15.8146 4.31802C16.6936 5.16193 17.1875 6.30653 17.1875 7.5V10.5H7.8125V7.5ZM21.875 25.5C21.875 25.8978 21.7104 26.2794 21.4174 26.5607C21.1243 26.842 20.7269 27 20.3125 27H4.6875C4.2731 27 3.87567 26.842 3.58265 26.5607C3.28962 26.2794 3.125 25.8978 3.125 25.5V15C3.125 14.6022 3.28962 14.2206 3.58265 13.9393C3.87567 13.658 4.2731 13.5 4.6875 13.5H20.3125C20.7269 13.5 21.1243 13.658 21.4174 13.9393C21.7104 14.2206 21.875 14.6022 21.875 15V25.5Z" fill="#161615"/>
-                        </svg>
-                </div>
-            </div></a>
-            <a href="/labs"><div class="project-item">
-                <div class="project-item-thumb">
-                    <img src="img/project-lab.png">
-                </div>
-                <div class="project-item-title link">
-                    <h2>Lab</h2>
-                </div>
-            </div></a>
-            <div class="project-item-blank"></div>
+          </div>
+          <div class="bc-label">
+            <h2 id="projectLabel">Instagram</h2>
+          </div>
         </div>
-        <div class="lets-chat">
-            <h2>Let's Chat</h2>
-            <div class="lets-chat-info">
-                <a href="mailto:rianmckeelong@gmail.com" target="_blank" class="link"><h3>Email: rianmckeelong@gmail.com</h3></a>
-                <div class="lets-chat-info-link link"><a href="https://www.instagram.com/rianlong_01/" target="_blank"><h3>IG: @rianlong_01</h3></a></div>
-            </div>
+        <div class="bc-right">
+          <div class="bc-contact">
+            <h2><a class="yellow" href = "mailto: rianmckeelong@gmail.com">Let's talk</a></h2>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="navList">
+      <li><a href="#ig" class="navLink">Instagram</a></li>
+      <li><a href="#purple" class="navLink">Purple</a></li>
+      <li><a href="#epic" class="navLink">Epic Games</a></li>
+      <li><a href="#third" class="navLink">Third Room by Element</a></li>
+      <li><a href="#hubs" class="navLink">Mozilla Hubs</a></li>
+      <li><a href="#oculus" class="navLink">Oculus</a></li>
+    </div>
+  </header>
+
+
+  <div class="page-content">
+  <div class="top-info">
+    <div class="info-left">
+      <img src="img/rianprofile.png">
+      <h1>My name is <span class="yellow">Rian Long</span>, I am a product designer at TikTok and a previous adjunct professor of design at Portland State University.</h1>
+      <h2><a class="yellow" href = "mailto: rianmckeelong@gmail.com">Let's talk</a></h2>
+    </div>
+    <div class="info-right">
+      <p class="grey">Work shown</p>
+      <h2><a href="#ig">Instagram</a></h2>
+      <h2><a href="#purple">Purple</a></h2>
+      <h2><a href="#epic">Epic Games</a></h2>
+      <h2><a href="#third">Third Room by Element</a></h2>
+      <h2><a href="#hubs">Mozilla Hubs</a></h2>
+      <h2><a href="#oculus">Oculus</a></h2>
+    </div>
+  </div>
+  <div class="work">
+    <div class="section" id="ig" data-id="Instagram">
+      <div class="one-up">
+        <video autoplay="1" muted="1" loop="1" playsinline="1" poster="">
+          <source src="/video/ig-full-sizzlereel.mp4">
+        </video>
+      </div>
+        <div class="two-up">
+          <div class="half">
+            <video autoplay="1" muted="1" loop="1" playsinline="1" poster="">
+              <source src="/video/ig-half-pagescroll.mp4">
+            </video>
+          </div>
+          <div class="half">
+            <img src="img/ig-half-smile.png">
+          </div>
+        </div>
+        <div class="one-up">
+          <video autoplay="1" muted="1" loop="1" playsinline="1" poster="/img/ig-full-heartfall.png">
+            <source src="/video/ig-full-heartfall.mp4">
+          </video>
+        </div>
+        <div class="one-up">
+          <img src="/img/ig-full-photodirection.png">
+        </div>
+        <div class="one-up">
+          <img src="/img/ig-full-components.png">
+        </div>
+        <div class="two-up">
+          <div class="half">
+            <img src="img/ig-half-covid.png">
+          </div>
+          <div class="half">
+            <img src="img/ig-half-clouds.png">
+          </div>
+        </div>
+        <div class="one-up">
+          <video autoplay="1" muted="1" loop="1" playsinline="1" poster="/img/ig-full-heartfall.png">
+            <source src="/video/ig-full-eastereggs.mp4">
+          </video>
+        </div>
+        <div class="two-up">
+          <div class="half">
+            <video autoplay="1" muted="1" loop="1" playsinline="1" poster="">
+              <source src="/video/ig-half-emojidrop.mp4">
+            </video>
+          </div>
+          <div class="half">
+            <video autoplay="1" muted="1" loop="1" playsinline="1" poster="">
+              <source src="/video/ig-half-gradientlogo.mp4">
+            </video>
+          </div>
         </div>
     </div>
     
+
+    <div class="section" id="purple" data-id="Purple">
+      <div class="one-up">
+        <video autoplay="1" muted="1" loop="1" playsinline="1" poster="">
+          <source src="/video/purple-full-sizzle.mp4">
+        </video>
+      </div>
+      <div class="two-up">
+        <div class="half">
+          <video autoplay="1" muted="1" loop="1" playsinline="1" poster="">
+            <source src="/video/purple-half-airflow.mp4">
+          </video>
+        </div>
+        <div class="half">
+          <img src="img/purple-half-mobilemock.png">
+        </div>
+      </div>
+      <div class="two-up">
+        <div class="half">
+          <img src="img/purple-half-mobilescreens.png">
+        </div>
+        <div class="half">
+          <video autoplay="1" muted="1" loop="1" playsinline="1" poster="">
+            <source src="/video/purple-half-renders.mp4">
+          </video>
+        </div>
+      </div>
+      <div class="one-up">
+        <img src="/img/purple-full-sketches.png">
+      </div>
+      <div class="one-up">
+        <img src="/img/purple-full-screencollage.png">
+      </div>
+      <div class="two-up">
+        <div class="half">
+          <img src="img/purple-half-productpage.png">
+        </div>
+        <div class="half">
+          <img src="img/purple-half-explodedmattress.png">
+        </div>
+      </div>
+      <div class="two-up">
+        <div class="half">
+          <img src="img/purple-half-pressure.png">
+        </div>
+        <div class="half">
+          <img src="img/purple-half-pinkpage.png">
+        </div>
+      </div>
+      <div class="one-up">
+        <img src="/img/purple-full-designsystems.png">
+      </div>
+    </div>
+
+
+    <div class="section" id="epic" data-id="Epic Games">
+      <div class="one-up">
+        <img src="/img/epic-full-achievements.png">
+      </div>
+      <div class="two-up">
+        <div class="half">
+          <img src="img/epic-half-launch.png">
+        </div>
+        <div class="half">
+          <img src="img/epic-half-blog.png">
+        </div>
+      </div>
+      <div class="one-up">
+        <img src="/img/epic-full-videoplayer.png">
+      </div>
+      <div class="two-up">
+        <div class="half">
+          <img src="img/epic-half-achievementunlocked.png">
+        </div>
+        <div class="half">
+          <img src="img/epic-half-hubcards.png">
+        </div>
+      </div>
+      <div class="one-up">
+        <img src="/img/epic-full-profilebanner.png">
+      </div>
+      <div class="two-up">
+        <div class="half">
+          <img src="img/epic-half-poll.png">
+        </div>
+        <div class="half">
+          <img src="img/epic-half-timing.png">
+        </div>
+      </div>
+      <div class="one-up">
+        <img src="/img/epic-full-profilepage.png">
+      </div>
+      <div class="two-up">
+        <div class="half">
+          <img src="img/epic-half-levelchart.png">
+        </div>
+        <div class="half">
+          <img src="img/epic-half-profilesettings.png">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="section" id="third" data-id="Third Room by Element">
+      <div class="one-up">
+          <img src="img/third-full-homepage.png">
+      </div>
+      <div class="two-up">
+        <div class="half">
+          <video autoplay="1" muted="1" loop="1" playsinline="1" poster="">
+            <source src="/video/third-half-enterworld.mp4">
+          </video>
+        </div>
+        <div class="half">
+          <img src="img/third-half-chat.png">
+        </div>
+      </div>
+      <div class="one-up">
+        <img src="img/third-full-avatarselect.png">
+      </div>
+      <div class="one-up">
+          <img src="img/third-full-placeobject.png">
+      </div>
+    </div>
+
+
+    <div class="section" id="hubs" data-id="Mozilla Hubs">
+      <div class="one-up">
+        <video autoplay="1" muted="1" loop="1" playsinline="1" poster="">
+          <source src="/video/hubs-full-devices.mp4">
+        </video>
+      </div>
+      <div class="two-up">
+        <div class="half">
+          <video autoplay="1" muted="1" loop="1" playsinline="1" poster="">
+            <source src="/video/hubs-half-paperplanes.mp4">
+          </video>
+        </div>
+        <div class="half">
+          <img src="img/hubs-half-museum.png">
+        </div>
+      </div>
+      <div class="one-up">
+        <img src="img/hubs-full-components.png">
+      </div>
+      <div class="one-up">
+        <img src="img/hubs-full-onboarding.png">
+      </div>
+      <div class="one-up">
+        <video autoplay="1" muted="1" loop="1" playsinline="1" poster="">
+          <source src="/video/hubs-full-objectlist.mp4">
+        </video>
+      </div>
+      <div class="two-up">
+        <div class="half">
+          <img src="img/hubs-half-objectselected.png">
+        </div>
+        <div class="half">
+          <img src="img/hubs-half-spokeui.png">
+        </div>
+      </div>
+      <div class="one-up">
+        <img src="img/hubs-full-spokescene.png">
+      </div>
+    </div>
+
+
+    <div class="section" id="oculus" data-id="Oculus">
+      <div class="one-up">
+        <video autoplay="1" muted="1" loop="1" playsinline="1" poster="">
+          <source src="/video/oculus-full-sizzle.mp4">
+        </video>
+      </div>
+      <div class="two-up">
+        <div class="half">
+          <video autoplay="1" muted="1" loop="1" playsinline="1" poster="">
+            <source src="/video/oculus-half-layers.mp4">
+          </video>
+        </div>
+        <div class="half">
+          <img src="img/oculus-half-anatomy.png">
+        </div>
+      </div>
+      <div class="two-up">
+        <div class="half">
+          <div class="half">
+            <img src="img/oculus-half-game.png">
+          </div>
+        </div>
+        <div class="half">
+          <img src="img/oculus-half-keyscreens.png">
+        </div>
+      </div>
+      <div class="one-up">
+        <img src="img/oculus-full-userflow.png">
+      </div>
+      <div class="one-up">
+        <img src="img/oculus-full-uicollage.png">
+      </div>
+    </div>
+      
+  </div>
+  </div>
 </body>
 </html>

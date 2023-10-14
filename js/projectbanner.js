@@ -62,34 +62,3 @@ $(document).ready(function() {
     });
 
 });
-
-
-
-  /* Specify the IDs you want to monitor
-  var targetIds = ["ig", "purple", "epic", "third", "hubs", "oculus"];
-
-  targetIds.forEach(function(targetId) {
-      var targetDiv = document.querySelector("#" + targetId);
-
-      var observer = new IntersectionObserver(function(entries) {
-          entries.forEach(function(entry) {
-              if (entry.isIntersecting) {
-                  // Change the string when the current div is in view
-                  outputElement.textContent = "The div with ID " + targetId + " is in view!";
-                  console.log("hello");
-                  isStringChanged = true;
-              } else {
-                  // Reset the string when all monitored divs are out of view
-                  if (!document.querySelector("#" + targetIds.join(",#") + ".isIntersecting")) {
-                      outputElement.textContent = "This text will change";
-                      isStringChanged = false;
-                  }
-              }
-          });
-
-          observer.observe(targetDiv);
-      });
-  });
-});
-
-*/
